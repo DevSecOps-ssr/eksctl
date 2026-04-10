@@ -1,11 +1,9 @@
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
-
 metadata:
   name: roboshop
   region: us-east-1
-
 managedNodeGroups:
 - name: on-demand
-  instanceType: t3.medium
+  instanceTypes: ["t3.small","t3.medium"]
   desiredCapacity: 2
